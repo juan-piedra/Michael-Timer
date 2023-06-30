@@ -1,4 +1,4 @@
-var targetDate = new Date();
+var targetDate = new Date('2023-06-29T21:30:00');
 
 function updateTimer() {
   var now = new Date();
