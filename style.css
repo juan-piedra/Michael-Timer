@@ -53,13 +53,10 @@ h1 {
   margin-bottom: 10px;
 }
 
-.sub-timer {
+.sub-timer, .longest-streak-time {
   font-size: 25px;
 }
 
-.longest-streak-time {
-  font-size: 25px;
-}
 
 .box-container {
   display: flex;

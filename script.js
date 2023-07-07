@@ -1,36 +1,42 @@
-var michaelDate = new Date('2023-07-06T21:03:00');
-
-const updateMichaelTimer = () => {
+class Timer {
+  constructor(date, elementID) {
+    this.date = date;
+    this.elementID = elementID;
+  }
   
-  var now = new Date();
-  var timeDiff = now.getTime() - michaelDate.getTime();
+  stopWatch() {
+    var targetDate = new Date(this.date)
+    var now = new Date();
+    var timeDiff = now.getTime() - targetDate.getTime();
+  
+    var days = Math.floor(timeDiff / (1000 * 3600 * 24));
+    var hours = Math.floor((timeDiff / (1000 * 3600)) % 24);
+    var minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
+    var seconds = Math.floor((timeDiff / 1000) % 60);
+  
+    var timerDisplay = days + ' days, ' + hours + ' hours, ' + minutes + ' minutes, ' + seconds + ' seconds';
+    document.getElementById(this.elementID).innerHTML = timerDisplay;
+  }
 
-  var days = Math.floor(timeDiff / (1000 * 3600 * 24));
-  var hours = Math.floor((timeDiff / (1000 * 3600)) % 24);
-  var minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
-  var seconds = Math.floor((timeDiff / 1000) % 60);
+  countDown() {
+    var targetDate = new Date(this.date)
+    var now = new Date();
+    var timeDiff = targetDate.getTime() - now.getTime();
+  
+    var days = Math.floor(timeDiff / (1000 * 3600 * 24));
+    var hours = Math.floor((timeDiff / (1000 * 3600)) % 24);
+    var minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
+    var seconds = Math.floor((timeDiff / 1000) % 60);
+  
+    var timerDisplay = days + ' days, ' + hours + ' hours, ' + minutes + ' minutes, ' + seconds + ' seconds';
+    document.getElementById(this.elementID).innerHTML = timerDisplay;
+  }
+}
 
-  var timerDisplay = days + ' days, ' + hours + ' hours, ' + minutes + ' minutes, ' + seconds + ' seconds';
-  document.getElementById('michael-timer').innerHTML = timerDisplay;
-};
-
-var ldocDate = new Date('2023-09-11T18:30:00');
-
-const updateLDOCTimer = () => {
-  var now = new Date();
-  var timeDiff = ldocDate.getTime() - now.getTime();
-
-  var days = Math.floor(timeDiff / (1000 * 3600 * 24));
-  var hours = Math.floor((timeDiff / (1000 * 3600)) % 24);
-  var minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
-  var seconds = Math.floor((timeDiff / 1000) % 60);
-
-  var timerDisplay = days + ' days, ' + hours + ' hours, ' + minutes + ' minutes, ' + seconds + ' seconds';
-  document.getElementById('ldoc-timer').innerHTML = timerDisplay;
-};
-
+const michaelTimer = new Timer('2023-07-06T21:03:00', 'michael-timer');
+const ldocTImer = new Timer('2023-09-19T18:30:00', 'ldoc-timer');
 
 setInterval(() => {
-  updateMichaelTimer();
-  updateLDOCTimer();
+  michaelTimer.stopWatch();
+  ldocTImer.countDown();
 }, 1000);
