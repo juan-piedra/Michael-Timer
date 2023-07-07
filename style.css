@@ -57,6 +57,10 @@ h1 {
   font-size: 25px;
 }
 
+.longest-streak-time {
+  font-size: 25px;
+}
+
 .box-container {
   display: flex;
   justify-content: space-between;

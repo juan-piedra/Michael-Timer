@@ -1,6 +1,7 @@
-var michaelDate = new Date('2023-06-29T21:00:00');
+var michaelDate = new Date('2023-07-06T21:03:00');
 
 const updateMichaelTimer = () => {
+  
   var now = new Date();
   var timeDiff = now.getTime() - michaelDate.getTime();
 
