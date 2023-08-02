@@ -33,7 +33,7 @@ class Timer {
   }
 }
 
-const michaelTimer = new Timer('2023-07-06T21:03:00', 'michael-timer');
+const michaelTimer = new Timer('2023-08-01T18:36:00', 'michael-timer');
 const ldocTImer = new Timer('2023-09-19T18:30:00', 'ldoc-timer');
 
 setInterval(() => {
