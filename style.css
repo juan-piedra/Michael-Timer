@@ -53,7 +53,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-.sub-timer, .longest-streak-time {
+.sub-timer, .longest-streak-time, .shortest-streak-time {
   font-size: 25px;
 }
 
