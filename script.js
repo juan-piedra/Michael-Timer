@@ -80,6 +80,10 @@ const notesArr = [
   "Hey Michael, Nirav and Julius: You guys have been wonderful the entire class. You guys work very well together and have helped me in many ways throughout this wonderful (sometimes painful) course. Best of luck to your future and thank you so much. -Tod Winchester",
   "Thank you for always willing to help us, always have a great attitude and being understanding of each individual’s needs. I will forever tell people not to worry when they indeed should worry, and will keep striving to always improve. -Francisco Verdugo Del Real",
   "Thank you for everything! -Raymond Rodriguez",
+  "Couldn't have asked for a better person to teach us these past 6 months. You made class feel as welcoming and comfortable as possible no matter how difficult the material got. I appreciate all the jokes, advice, and guidance and you have made me a more confident developer. -Irene Panis",
+  "Thanks you guys for a fun and productive learning experience much appreciated and hope to take these skills to my next steps in life! -Newman Porter",
+  "Thank you guys for everything you have done for us in our journey. To some we were brand new to coding and it was like reading another language that we obviously didn’t understand but to others they knew a few. During these rough 6 months I am grateful for having a team of instructors who taught us everything we need to know to go on and attack the job field. An expert in anything was once a beginner, and hopefully next time we meet one another, I can call you my coworkers. -Oswaldo Thompson",
+  "Thank you Michael, Nirav, and Julius for everything you have done for us. Michael, your amazing teaching skills, immense patience, and super cool and friendly personality was what made this course so enjoyable. Accompanied by Nirav and Julius, who are some of the smartest and most awesome individuals out there, really brought it all together. I hope to stay connected, and see everyone succeed in the future! 🙌 -Juan Piedra"
 ];
 const carouselInner = document.querySelector(".carousel-inner");
 
